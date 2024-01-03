@@ -1,19 +1,19 @@
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-import Food from './Food.jsx'
+import Home from "./pages/Homepage/Home"
+import Page1 from "./pages/Page1/Page1"
 
-import VideoPlayer from "react-background-video-player"
-import BG_Video from './BG_Video.jsx';
 
-function App() {
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+
+
+export default function App() {
   return(
     <>
-    <BG_Video></BG_Video>
-    <Header></Header>
-    <Food></Food>
-    <Footer></Footer>
+    <BrowserRouter>
+      <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/page1' element={<Page1 />}></Route>
+        </Routes>
+    </BrowserRouter>
     </>
   );
 } 
-
-export default App

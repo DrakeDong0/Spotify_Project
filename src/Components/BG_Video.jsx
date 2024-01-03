@@ -1,5 +1,5 @@
 import React from "react";
-import videox from "./assets/videoBG.mp4"
+import videox from "../assets/videoBG.mp4"
 
 function BG_Video(){
     return(
