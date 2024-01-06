@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0);
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"); 
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+
+.header-container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+
+
+    position: fixed; 
+    width: 1485px;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    margin: 0;
+    font-size: 12pt;
+    color: white;
+    text-decoration:none;
+    gap:50px;
+    font-family: 'Lexend', sans-serif;
+
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.search-bar{
+    margin-left: 30px;
+    width: max-content;
+    display:flex;
+    align-items: center;
+    padding: 14px;
+    border-radius:28px;
+    color: black;
+    width:550px;
+    transition: box-shadow 0.25s;
+
+}
+.search-bar:focus-within{
+    box-shadow: 0 0 10px rgba(30,215,96,5);;
+    color: rgba(0, 0, 0, 0.6);
+    
+}
+.search-bar:hover{
+    box-shadow: 0 0 10px 2px rgba(30, 215, 96, 0.75);
+    transform: scale(1.1);
+}
+.search-input{
+    font-size:16px;
+    margin-left: 13px;
+    outline: none;
+    border: none;
+    background: transparent;
+    flex:1;
+    color: white;
+}
+.search-input::placeholder,
+.search-icon{
+    color: rgba(255, 255, 255, 0.6);
+}
+.checkbox-container{
+    height: 55px;
+    width: 150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    padding:20px;
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.66);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    transition: box-shadow 0.25s;
+}
+label {
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 8px; 
+}
+label:hover{
+    color:white;
+}
+input[type="checkbox"]:checked:after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f00c";
+    font-weight: 900;
+    color: #1DB954;
+    font-size: 16px;
+    box-shadow: 0 0 10px 4px rgba(30, 215, 96, 0.75);
+    transition: box-shadow 0.25s;
+}
+input[type="checkbox"]:hover{
+    box-shadow: 0 0 10px 4px rgba(30, 215, 96, 0.75);
+    transition: box-shadow 0.25s;
+    transform:scale(1.1);
+    color:white;
+}
+.delete-button, .logout-button {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    margin-left: 0; 
+    margin-right: 0; 
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 16px;
+}
+.delete-button:hover{
+    box-shadow: 0 0 10px 4px rgba(30, 215, 96, 0.75);
+    transition: box-shadow 0.25s;
+    transform: scale(1.1);
+    color:white;
+}
+
+.logout-button:hover{
+    color:white;
+    box-shadow: 0 0 10px 4px rgba(30, 215, 96, 0.75);
+    transition: box-shadow 0.25s;
+    transform: scale(1.1);
+}
+.vertical-line{
+    margin-top:13px;
+    width: 1px;
+    height: 25px;
+    border-radius:1px;
+    background-color: rgba(255, 255, 255, 0.66);
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

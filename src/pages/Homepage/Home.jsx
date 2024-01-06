@@ -4,9 +4,6 @@ import "./Home.css"
 import BG_Video from "../../Components/BG_Video";
 import Footer from "../../Components/Footer/Footer"
 
-function clicked(){
-    alert('Clicked');
-}
 
 const handleLogin = () => {
     const client_id = "11a53d57252045948aba4b16e6872e80"; 

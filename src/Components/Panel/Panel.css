@@ -1,0 +1,38 @@
+.Left-Panel{
+  
+  box-sizing: border-box;
+  position:fixed;
+  display:flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction:column;
+  text-decoration: none;
+  background-color: #191414;
+  color: white;
+  width: 30%;
+}
+.Left-Top-Container{
+  animation: 2s slide-right;
+  height:25vh;
+}
+.Left-Bot-Container{
+  animation: 2s slide-right;
+    margin-top:25vh;
+    height: 75vh;
+}
+.Right-Panel{
+    box-sizing: border-box;
+    height:100vh;
+    right: 0;
+    width: 1485px;
+    position:absolute;
+    background-color: #413B3B;
+}
+@keyframes slide-right {
+    from {
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
